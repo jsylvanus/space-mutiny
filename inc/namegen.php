@@ -39,12 +39,12 @@ if ( mt_rand(0,50) == 0 ) {
 } else if ( mt_rand(0,10) == 0 ) { // use prefix
 	$prefix = arand($prefixes);
 	if (mt_rand(0,4) == 0) {
-		$output = sprintf( "%s %s%s", arand($firstnames), $prefix, arand($lastnames) );
+		$output = sprintf( "%s %s&shy;%s", arand($firstnames), $prefix, arand($lastnames) );
 	} else {
-		$output = sprintf( "%s %s%s%s", arand($firstnames), $prefix, arand($lastnames), arand($lastnames) );
+		$output = sprintf( "%s %s%s&shy;%s", arand($firstnames), $prefix, arand($lastnames), arand($lastnames) );
 	}
 } else {
-	$output = sprintf( "%s %s%s", arand($firstnames), arand($lastnames), arand($lastnames) );
+	$output = sprintf( "%s %s&shy;%s", arand($firstnames), arand($lastnames), arand($lastnames) );
 }
 $actor = arand($actors);
 
