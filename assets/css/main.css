@@ -404,7 +404,7 @@ header {
         left: auto; }
 
 footer {
-  background: white url(../img/body-bg.jpg) no-repeat bottom center;
+  background: transparent url(../img/body-bg.jpg) no-repeat bottom center;
   background-size: 100% auto;
   width: 100%;
   height: 250px;

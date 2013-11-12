@@ -87,7 +87,7 @@ header {
 }
 
 footer {
-	background: $white url(#{$img-path}/body-bg.jpg) no-repeat bottom center;
+	background: transparent url(#{$img-path}/body-bg.jpg) no-repeat bottom center;
 	// background: $white url(#{$img-path}/mst3k2.png) no-repeat bottom center;
 	background-size: 100% auto;
 	width: 100%;
