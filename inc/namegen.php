@@ -19,10 +19,10 @@ $lastnames = array(
 );
 
 $actors = array(
-	'Adam Sandler', 'Chris Rock', 'Ben Stiller', 'Will Ferrell', 'Jack Black', 'Rob Schneider', 'Chuck Norris', 
+	'Adam Sandler', 'Chris Rock', 'Ben Stiller', 'Will Ferrell', 'Jack Black', 'Rob Schneider', 'Chuck Norris',
 	'Steven Seagal', 'Jean-Claude Van Damme', 'Ashton Kutcher', 'Eddie Murphy', 'Steve Martin', 'Brendan Fraser',
-	'Michael Douglas', 'Vin Diesel', 'Jackie Chan', 'Owen Wilson', 'Robin Williams', 'Arnold Schwarzenegger', 
-	'Jim Carrey', 'Sylvester Stallone', 'Jude Law', 'Colin Farrell', 'George Clooney', 'Johnny Depp', 
+	'Michael Douglas', 'Vin Diesel', 'Jackie Chan', 'Owen Wilson', 'Robin Williams', 'Arnold Schwarzenegger',
+	'Jim Carrey', 'Sylvester Stallone', 'Jude Law', 'Colin Farrell', 'George Clooney', 'Johnny Depp',
 	'Keanu Reeves', 'Leonardo DiCaprio', 'Kristen Stewart', 'Mary-Kate Olsen', 'Jennifer Lopez', 'Sarah Jessica Parker',
 	'Lindsay Lohan', 'Pamela Anderson', 'Miley Cyrus', 'Drew Barrymore', 'Uma Thurman', 'Benedict Cumberbatch', 'Treat Williams',
 	'Andi Graham', 'Charlene Foote', 'Casey Paquet', 'Adam Kuhn', 'Daryn St. Pierre', 'Chris Kanclerowicz',
@@ -47,25 +47,5 @@ if ( mt_rand(0,50) == 0 ) {
 	$output = sprintf( "%s %s%s", arand($firstnames), arand($lastnames), arand($lastnames) );
 }
 $actor = arand($actors);
+
 ?>
-<html>
-	<head>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-    <style>
-      h1 {
-        font-family: 'Roboto Slab', serif;
-	font-size:3.5em;
-      }
-      h2, p { font-family: sans-serif; }
-      h1, h2, p { text-align:center; }
-    </style>
-		<title>Space Mutiny Namegen</title>
-	</head>
-	<body>
-	<div style="background-image:url('img/mst3k.jpg'); height:90%; width:100%; background-repeat:repeat-none; background-size:100% 100%;">
-		<h2 style="margin-top:4em;"><?= $actor ?></h2>
-		<p>as</p>
-		<h1><?= $output ?></h1>
-	</div>
-	</body>
-</html>

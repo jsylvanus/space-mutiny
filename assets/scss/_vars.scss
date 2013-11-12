@@ -1,0 +1,42 @@
+//
+// Typography
+//
+
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings: "h1, h2, h3, h4, h5, h6";
+$roboto: "Roboto Slab", $sans-serif;
+$russo: "Russo One", $sans-serif;
+$open-sans: "Open Sans", $sans-serif;
+
+//
+// Colors
+//
+
+$white: #fff;
+$black: #000;
+
+//
+// Paths
+//
+
+$img-path: "../img";
+
+//
+// Mixins
+//
+
+@mixin user-select($value) {
+	-webkit-user-select: $value;
+	 -khtml-user-select: $value;
+	   -moz-user-select: $value;
+	    -ms-user-select: $value;
+	        user-select: $value;
+}
+
+@mixin rotator($value) {
+	-webkit-transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
+	   -moz-transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
+	    -ms-transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
+	     -o-transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
+	        transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
+}
