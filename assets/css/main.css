@@ -358,15 +358,16 @@ header {
   padding: 8em 0;
   text-align: center;
   max-width: 800px;
-  min-width: 320px;
-  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-  -moz-transform: rotate(-10deg) skew(-10deg, 0);
-  -ms-transform: rotate(-10deg) skew(-10deg, 0);
-  -o-transform: rotate(-10deg) skew(-10deg, 0);
-  transform: rotate(-10deg) skew(-10deg, 0); }
+  min-width: 320px; }
   header h1, header h2, header p {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    text-align: center;
+    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+    -moz-transform: rotate(-10deg) skew(-10deg, 0);
+    -ms-transform: rotate(-10deg) skew(-10deg, 0);
+    -o-transform: rotate(-10deg) skew(-10deg, 0);
+    transform: rotate(-10deg) skew(-10deg, 0); }
   header h1, header h2 {
     display: block;
     clear: both; }
