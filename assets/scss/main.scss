@@ -6,9 +6,11 @@ html, body {
 }
 
 body {
-	background: $white url(#{$img-path}/body-bg.jpg) no-repeat bottom center;
-	background-size: 100% auto;
-	font: normal 100%/1.2 $sans-serif;
+	// background: $white url(#{$img-path}/body-bg.jpg) no-repeat bottom center;
+	background: $white url(#{$img-path}/mst3k.svg) no-repeat bottom center;
+	background-size: 102% auto;
+	background-attachment: fixed;
+	font: normal 100%/1.5 $sans-serif;
 	text-align: left;
 	color: $black;
 	@include cleartext(0);
@@ -18,11 +20,13 @@ section {
 	max-width: 1140px;
 	min-width: 320px;
 	margin: 0 auto;
-	padding: 6em 0;
+	padding: 5em 0;
 	text-align: center;
 }
 
 header {
+	font-family: $open-sans;
+	font-weight: 400;
 	@include rotator(-10);
 
 	h1, h2, h3, p {
@@ -43,13 +47,13 @@ header {
 	}
 
 	h2 {
-		font: 400 1.3em/1.5 $open-sans;
+		font-size: 1.3em;
 		text-transform: uppercase;
 		letter-spacing: 0.3em;
 	}
 
 	h3 {
-		font: 400 0.75em/1.5 $open-sans;
+		font-size: 0.75em;
 		color: lighten($black, 60%);
 		text-transform: uppercase;
 		letter-spacing: 0.3em;
