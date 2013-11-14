@@ -2,44 +2,35 @@
 @import 'vars';
 
 html, body {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
+	min-height: 100%;
 }
 
 body {
+	background: $white url(#{$img-path}/body-bg.jpg) no-repeat bottom center;
+	background-size: 100% auto;
 	font: normal 100%/1.2 $sans-serif;
 	text-align: left;
 	color: $black;
+	@include cleartext(0);
 }
 
 section {
-
-}
-
-h1 {
-	font-family: $roboto;
-	font-size: 3.5em;
+	max-width: 1140px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 6em 0;
+	text-align: center;
 }
 
 header {
-	margin: 0 auto;
-	padding: 8em 0;
-	text-align: center;
-	max-width: 800px;
-	min-width: 320px;
-	z-index:2;
-	position:relative;
+	@include rotator(-10);
 
-	h1, h2, p {
+	h1, h2, h3, p {
 		margin: 0;
 		padding: 0;
-		text-align: center;
-		@include rotator(-10);
 	}
 
-	h1, h2 {
+	h1, h2, h3 {
 		display: block;
 		clear: both;
 	}
@@ -48,13 +39,21 @@ header {
 		font: 400 6em/0.9 $russo;
 		border-bottom: 1px dashed $black;
 		padding-bottom: 0.25em;
-		text-shadow: 2px 4px 0 $white, 8px 10px 0 lighten($black, 80%);
+		text-shadow: 4px 4px 0 $white, 12px 12px 0 lighten($black, 85%);
 	}
 
 	h2 {
 		font: 400 1.3em/1.5 $open-sans;
 		text-transform: uppercase;
 		letter-spacing: 0.3em;
+	}
+
+	h3 {
+		font: 400 0.75em/1.5 $open-sans;
+		color: lighten($black, 60%);
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		padding: 0.5em 0;
 	}
 
 	p {
@@ -86,38 +85,4 @@ header {
 			}
 		}
 	}
-}
-
-footer {
-	background: transparent url(#{$img-path}/body-bg.jpg) no-repeat bottom center;
-	// background: $white url(#{$img-path}/mst3k2.png) no-repeat bottom center;
-	background-size: 100% auto;
-	width: 100%;
-	height: 250px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 0;
-}
-
-.vegas-loading {
-	display: none; // no preloader kthx
-}
-
-.vegas-overlay {
-	// background: transparent url(overlays/01.png);
-	opacity: 0.5;
-	z-index: -1;
-}
-
-.vegas-background {
-	-ms-interpolation-mode: bicubic;
-	image-rendering: optimizeQuality;
-    max-width: none !important; /* counteracts global img modification by twitter bootstrap library */
-	z-index: -2;
-}
-
-.vegas-overlay,
-.vegas-background {
-	@include user-select(none);
 }

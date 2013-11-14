@@ -1,11 +1,7 @@
 $ ->
-	# Vegas - http://vegas.jaysalvat.com/
-	$bg_path = 'assets/img/bg/'
-	# vegas = ->
-	# 	$.vegas( 'slideshow',
-	# 	backgrounds: [
-	# 		{ src: $bg_path + 'sm-1.png' }
-	# 		{ src: $bg_path + 'sm-2.png' }
-	# 		{ src: $bg_path + 'sm-3.png' }
-	# 	]
-	# 	) 'overlay'
+	# FitText
+	# Adjust the compressor as needed
+	h = $("header")
+	$(h, "h1").fitText(3)
+	$(h, "h2").fitText(2)
+	$(h, "p").fitText(4)

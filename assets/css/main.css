@@ -339,49 +339,51 @@ table {
   border-spacing: 0; }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
+  min-height: 100%; }
 
 body {
+  background: white url(../img/body-bg.jpg) no-repeat bottom center;
+  background-size: 100% auto;
   font: normal 100%/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
-  color: black; }
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0px; }
 
-h1 {
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3.5em; }
+section {
+  max-width: 1140px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 6em 0;
+  text-align: center; }
 
 header {
-  margin: 0 auto;
-  padding: 8em 0;
-  text-align: center;
-  max-width: 800px;
-  min-width: 320px;
-  z-index: 2;
-  position: relative; }
-  header h1, header h2, header p {
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0); }
+  header h1, header h2, header h3, header p {
     margin: 0;
-    padding: 0;
-    text-align: center;
-    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-    -moz-transform: rotate(-10deg) skew(-10deg, 0);
-    -ms-transform: rotate(-10deg) skew(-10deg, 0);
-    -o-transform: rotate(-10deg) skew(-10deg, 0);
-    transform: rotate(-10deg) skew(-10deg, 0); }
-  header h1, header h2 {
+    padding: 0; }
+  header h1, header h2, header h3 {
     display: block;
     clear: both; }
   header h1 {
     font: 400 6em/0.9 "Russo One", "Helvetica Neue", Helvetica, Arial, sans-serif;
     border-bottom: 1px dashed black;
     padding-bottom: 0.25em;
-    text-shadow: 2px 4px 0 white, 8px 10px 0 #cccccc; }
+    text-shadow: 4px 4px 0 white, 12px 12px 0 #d9d9d9; }
   header h2 {
     font: 400 1.3em/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3em; }
+  header h3 {
+    font: 400 0.75em/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: 0.5em 0; }
   header p {
     text-transform: uppercase;
     color: #999999;
@@ -404,35 +406,3 @@ header {
       header p span:after {
         right: 0;
         left: auto; }
-
-footer {
-  background: transparent url(../img/body-bg.jpg) no-repeat bottom center;
-  background-size: 100% auto;
-  width: 100%;
-  height: 250px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0; }
-
-.vegas-loading {
-  display: none; }
-
-.vegas-overlay {
-  opacity: 0.5;
-  z-index: -1; }
-
-.vegas-background {
-  -ms-interpolation-mode: bicubic;
-  image-rendering: optimizeQuality;
-  max-width: none !important;
-  /* counteracts global img modification by twitter bootstrap library */
-  z-index: -2; }
-
-.vegas-overlay,
-.vegas-background {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }

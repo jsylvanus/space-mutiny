@@ -5,7 +5,7 @@ $firstnames = array(
 	'Slab', 'Rip', 'Roll', 'Reef', 'Punt', 'Punch', 'Lump', 'Hunk', 'Hack', 'Gristle', 'Fridge',
 	'Flint', 'Flink', 'Fist', 'Dirk', 'Crunch', 'Crud', 'Chunk', 'Chunky', 'Butch', 'Buff', 'Buck',
 	'Brick', 'Block', 'Bolt', 'Bold', 'Bob', 'Blast', 'Big', 'Beat', 'Crust', 'Pork', 'Gruff', 'Flash',
-	'Casey', 'Josh', 'Char', 'Andi', 'Adam', 'Chris', 'Daryn', 'James', 'Grundle'
+	'Casey', 'Josh', 'Char', 'Andi', 'Adam', 'Chris', 'Daryn', 'James', 'Grundle', 'Fluff', 'Fondle'
 );
 
 $lastnames = array(
@@ -15,7 +15,7 @@ $lastnames = array(
 	'Thorn', 'Body', 'Blow', 'Fist', 'Hunk', 'Broth', 'Groin', 'Ball', 'Speed', 'Fast', 'Zoom', 'Bulk', 'Hurt',
 	'Squat', 'Thrust', 'Stomp', 'Crunch', 'Slab', 'Lamp', 'Man', 'Hair', 'Roid', 'Knob', 'Run', 'Rust', 'Rod',
 	'Shaft', 'Slam', 'Slag', 'Cheek', 'Nugget', 'Taint', 'Horse', 'Cream', 'Blade', 'Chud', 'Pants', 'Ram', 'Flap',
-	'Grundle', 'Thunder'
+	'Grundle', 'Thunder', 'Shovel'
 );
 
 $actors = array(

@@ -14,6 +14,7 @@ $open-sans: "Open Sans", $sans-serif;
 
 $white: #fff;
 $black: #000;
+$blue: #2cabe2;
 
 //
 // Paths
@@ -39,4 +40,9 @@ $img-path: "../img";
 	    -ms-transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
 	     -o-transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
 	        transform: rotate(#{$value}deg) skew(#{$value}deg, 0);
+}
+
+@mixin cleartext($stroke) {
+	-webkit-font-smoothing: antialiased;
+	   -webkit-text-stroke: #{$stroke}px;
 }
