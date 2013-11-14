@@ -71,6 +71,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'assets/js/build.js': [
+                        'assets/js/spacemutiny.js',
                         'assets/js/scripts.js',
                         'assets/js/vendor/*.js'
                     ]
