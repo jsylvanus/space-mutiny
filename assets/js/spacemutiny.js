@@ -4,6 +4,7 @@
   window.SpaceMutiny = (function() {
     function SpaceMutiny() {
       this.next = __bind(this.next, this);
+      var _this = this;
       this.template = _.template($('#mutiny-template').html());
       this.container = $('.marquee-container');
       this.firstnames = ['Whip', 'Trunk', 'Touch', 'Thick', 'Stump', 'Splint', 'Smoke', 'Smash', 'Slate', 'Slam', 'Slab', 'Rip', 'Roll', 'Reef', 'Punt', 'Punch', 'Lump', 'Hunk', 'Hack', 'Gristle', 'Fridge', 'Flint', 'Flink', 'Fist', 'Dirk', 'Crunch', 'Crud', 'Chunk', 'Chunky', 'Butch', 'Buff', 'Buck', 'Brick', 'Block', 'Bolt', 'Bold', 'Bob', 'Blast', 'Big', 'Beat', 'Crust', 'Pork', 'Gruff', 'Flash', 'Casey', 'Josh', 'Char', 'Andi', 'Adam', 'Chris', 'Daryn', 'James', 'Grundle', 'Fluff', 'Fondle', 'Meatpie'];
@@ -11,6 +12,11 @@
       this.actors = ['Adam Sandler', 'Chris Rock', 'Ben Stiller', 'Will Ferrell', 'Jack Black', 'Rob Schneider', 'Chuck Norris', 'Steven Seagal', 'Jean-Claude Van Damme', 'Ashton Kutcher', 'Eddie Murphy', 'Steve Martin', 'Brendan Fraser', 'Michael Douglas', 'Vin Diesel', 'Jackie Chan', 'Owen Wilson', 'Robin Williams', 'Arnold Schwarzenegger', 'Jim Carrey', 'Sylvester Stallone', 'Jude Law', 'Colin Farrell', 'George Clooney', 'Johnny Depp', 'Keanu Reeves', 'Leonardo DiCaprio', 'Kristen Stewart', 'Mary-Kate Olsen', 'Jennifer Lopez', 'Sarah Jessica Parker', 'Lindsay Lohan', 'Pamela Anderson', 'Miley Cyrus', 'Drew Barrymore', 'Uma Thurman', 'Benedict Cumberbatch', 'Treat Williams', 'Andi Graham', 'Charlene Foote', 'Casey Paquet', 'Adam Kuhn', 'Daryn St. Pierre', 'Chris Kanclerowicz', 'Josh Carey', 'James Sylvanus', 'Scott Stapp', 'Fleshy Funbridge'];
       this.prefixes = ['Vander', 'Mc', 'de', 'Le'];
       this.next();
+      $(window).on('keyup', function(ev) {
+        if (ev.keyCode === 39) {
+          return _this.next();
+        }
+      });
     }
 
     SpaceMutiny.prototype.next = function() {

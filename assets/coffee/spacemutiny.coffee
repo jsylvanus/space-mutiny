@@ -32,6 +32,10 @@ class window.SpaceMutiny
     ]
     @prefixes = [ 'Vander', 'Mc', 'de', 'Le' ]
     @next()
+    
+    # hook right arrow key for next slide
+    $(window).on 'keyup', (ev) =>
+      @next() if ev.keyCode is 39
 
   next : =>
     selection = @get_selection()
