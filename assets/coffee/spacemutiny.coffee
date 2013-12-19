@@ -8,8 +8,8 @@ class window.SpaceMutiny
       'Slab', 'Rip', 'Roll', 'Reef', 'Punt', 'Punch', 'Lump', 'Hunk', 'Hack', 'Gristle', 'Fridge',
       'Flint', 'Flink', 'Fist', 'Dirk', 'Crunch', 'Crud', 'Chunk', 'Chunky', 'Butch', 'Buff', 'Buck',
       'Brick', 'Block', 'Bolt', 'Bold', 'Bob', 'Blast', 'Big', 'Beat', 'Crust', 'Pork', 'Gruff', 'Flash',
-      'Casey', 'Josh', 'Char', 'Andi', 'Adam', 'Chris', 'Daryn', 'James', 'Grundle', 'Fluff', 'Fondle',
-      'Meatpie'
+      'Casey', 'Josh', 'Andi', 'Adam', 'Chris', 'Daryn', 'James', 'Grundle', 'Fluff', 'Fondle',
+      'Meatpie', 'Dave'
     ]
     @lastnames = [
       'Punch', 'Beef', 'Brave', 'Brick', 'Meat', 'Large', 'Huge', 'Hard', 'Cheese', 'Thick', 'Neck', 'Pec',
@@ -27,8 +27,8 @@ class window.SpaceMutiny
       'Jim Carrey', 'Sylvester Stallone', 'Jude Law', 'Colin Farrell', 'George Clooney', 'Johnny Depp',
       'Keanu Reeves', 'Leonardo DiCaprio', 'Kristen Stewart', 'Mary-Kate Olsen', 'Jennifer Lopez', 'Sarah Jessica Parker',
       'Lindsay Lohan', 'Pamela Anderson', 'Miley Cyrus', 'Drew Barrymore', 'Uma Thurman', 'Benedict Cumberbatch', 'Treat Williams',
-      'Andi Graham', 'Charlene Foote', 'Casey Paquet', 'Adam Kuhn', 'Daryn St. Pierre', 'Chris Kanclerowicz',
-      'Josh Carey', 'James Sylvanus', 'Scott Stapp', 'Fleshy Funbridge'
+      'Andi Graham', 'Casey Paquet', 'Adam Kuhn', 'Daryn St. Pierre', 'Chris Kanclerowicz',
+      'Josh Carey', 'James Sylvanus', 'Scott Stapp', 'Fleshy Funbridge', 'Dave Rau'
     ]
     @prefixes = [ 'Vander', 'Mc', 'de', 'Le' ]
     @next()
