@@ -20,9 +20,13 @@
     }
 
     SpaceMutiny.prototype.next = function() {
-      var selection;
+      var h, selection;
       selection = this.get_selection();
-      return this.container.html(this.template(selection));
+      this.container.html(this.template(selection));
+      h = $("header");
+      $(h, "h1").fitText(3);
+      $(h, "h2").fitText(2);
+      return $(h, "p").fitText(4);
     };
 
     SpaceMutiny.prototype.rand = function(choices) {
@@ -58,11 +62,6 @@
 }).call(this);
 ;(function() {
   $(function() {
-    var h;
-    h = $("header");
-    $(h, "h1").fitText(3);
-    $(h, "h2").fitText(2);
-    $(h, "p").fitText(4);
     window.mutiny = new window.SpaceMutiny();
     return window.mutiny_timer = setInterval(window.mutiny.next, 30000);
   });

@@ -41,6 +41,13 @@ class window.SpaceMutiny
     selection = @get_selection()
     @container.html( @template( selection ) )
     
+    # FitText
+    # Adjust the compressor as needed
+    h = $("header")
+    $(h, "h1").fitText(3)
+    $(h, "h2").fitText(2)
+    $(h, "p").fitText(4)
+    
   rand : (choices) -> choices[_.random(choices.length-1)]
 
   get_selection : ->
